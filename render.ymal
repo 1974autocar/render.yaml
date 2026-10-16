@@ -1,0 +1,9 @@
+
+services:
+  - type: web
+    name: prairie-acres-server
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
